@@ -9,28 +9,62 @@
 </head>
 <body>
     
-    <header>
-        <div>
-            <h1>Joori Abdullah</h1>
-            <p>CS enthuasist and web developer </p>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </header> 
+    <div class="container">
 
-    <main>
-        <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-            </ul>
-        </nav>
-        <div class="content">
+        <header>
+            <div class="header-text">
+                <h1>Joori Abdullah</h1>
+                <p>CS enthuasist and web developer </p>
+            </div>
+    
+        </header> 
 
-        </div>
-    </main>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/about">
+                            About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects">
+                            Projects
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="/skills">
+                            Skills
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            Contact Me
+                        </a>    
+                    </li>
+                </ul>
+            </nav>
+
+            <script>
+                const liElements = document.querySelectorAll('nav li');
+                
+                liElements.forEach( li => li.addEventListener('click', 
+                (e) => {
+                    let {target} = e;
+                    liElements.forEach(li => li.style.backgroundColor = '');
+                    target.style.backgroundColor = 'pink';
+                }));
+            </script>
+
+            <div class="content">
+                @section('content')
+                    <p>This is the default about section</p>
+                @show
+            </div>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
