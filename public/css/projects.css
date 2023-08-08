@@ -1,0 +1,40 @@
+.projects{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    gap: 0.5rem;
+    padding: 1.5rem;
+    overflow: auto;
+    border-radius: 1rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.project-container{
+    background-color: pink;
+    color: #d06c7d;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #956c6e;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+
+.project-info > h6{
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.links  img{
+    height: 44px;
+}

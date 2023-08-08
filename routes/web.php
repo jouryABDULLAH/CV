@@ -17,18 +17,17 @@ Route::get('/', function () {
     return view('layouts.app');
 });
 
-Route::get('/about', function(){
-    return view('about');
+Route::get('/{page}', function($page) {
+    if ($page == 'about') {
+        return view('about');
+    } elseif ($page == 'skills') {
+        return view('skills');
+    } elseif ($page == 'projects') {
+        return view('projects');
+    } elseif ($page == 'contact') {
+        return view('contact');
+    }
 });
 
-Route::get('/skills', function(){
-    return view('skills');
-});
 
-Route::get('/projects', function(){
-    return view('projects');
-});
-
-Route::get('/contact', function(){
-    return view('contact');
-});
+Route::get('/home',[ App\Http\Controllers\HomeController::class,'index'])->name('home.index');  

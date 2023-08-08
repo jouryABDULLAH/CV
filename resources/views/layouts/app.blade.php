@@ -23,6 +23,11 @@
             <nav>
                 <ul>
                     <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
                         <a href="/about">
                             About Me
                         </a>
@@ -58,7 +63,13 @@
 
             <div class="content">
                 @section('content')
-                    <p>This is the default about section</p>
+                    <h1>Hey! I'm <span class="name">Joori</span></h1>
+                    <h4>Web Developer</h4>
+                    <h4>Senior CS Student</h4> 
+                    <ul class="socials-home" style="background-color: ;">
+                        <li><a href=""><img src="{{ asset('images/github-custom.png') }}" alt=""></a></li>
+                        <li><a href=""> <img src="{{ asset('images/linkedin-custom.png') }}" alt=""> </a></li>
+                    </ul>
                 @show
             </div>
 
