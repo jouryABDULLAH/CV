@@ -13,8 +13,10 @@
 
         <header>
             <div class="header-text">
-                <h1>Joori Abdullah</h1>
-                <p>CS enthuasist and web developer </p>
+                <a href="/">
+                    <h1>Joori Abdullah</h1>
+                    <p>CS enthuasist and web developer </p>
+                </a>
             </div>
     
         </header> 
@@ -22,7 +24,7 @@
         <main>
             <nav>
                 <ul>
-                    <li>
+                    <li class="home-element">
                         <a href="/">
                             Home
                         </a>
@@ -43,7 +45,7 @@
                         </a>    
                     </li>
                     <li>
-                        <a href="/contact">
+                        <a href="/coontact/create">
                             Contact Me
                         </a>    
                     </li>

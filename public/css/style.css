@@ -52,6 +52,7 @@ header{
     grid-template-columns: 1fr;
     /* height: 40%; */
     height: 30%;
+    text-align: center;
 }
 
 /* same */
@@ -63,13 +64,13 @@ header{
 }
 
 /* same */
-.header-text > h1{
+.header-text  h1{
     font-family: 'Lobster', cursive;
     font-size: 3rem;
 }
 
 /* same */
-.header-text > p{
+.header-text  p{
     color: var(--pink);
     font-size: 1.2rem;
     font-weight: bold;
@@ -182,7 +183,7 @@ nav > ul{
         height: 351px; 
     }
 
-    .header-text > h1{
+    .header-text  h1{
         font-family: 'Lobster', cursive;
         font-size: 4rem;
     }
@@ -198,10 +199,14 @@ nav > ul{
     }
 }
 
-
-
 @media (max-height:668px){
     .content{
         height: 288px;
+    }
+}
+
+@media (max-width:395px){
+    .home-element{
+        display: none;
     }
 }
