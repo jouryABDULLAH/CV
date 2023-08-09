@@ -47,6 +47,11 @@
                             Contact Me
                         </a>    
                     </li>
+                    <li>
+                        <a href="/contacts">
+                            Contacts
+                        </a>    
+                    </li>
                 </ul>
             </nav>
 
@@ -67,8 +72,8 @@
                     <h4>Web Developer</h4>
                     <h4>Senior CS Student</h4> 
                     <ul class="socials-home" style="background-color: ;">
-                        <li><a href=""><img src="{{ asset('images/github-custom.png') }}" alt=""></a></li>
-                        <li><a href=""> <img src="{{ asset('images/linkedin-custom.png') }}" alt=""> </a></li>
+                        <li><a href="https://github.com/jouryABDULLAH"><img src="{{ asset('images/github-custom.png') }}" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/joori-abdullah/"> <img src="{{ asset('images/linkedin-custom.png') }}" alt=""> </a></li>
                     </ul>
                 @show
             </div>
