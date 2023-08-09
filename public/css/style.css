@@ -136,7 +136,7 @@ nav > ul{
     align-items: center;
     color: var(--light-color);
     /* height: 343px; */
-    height: 272px;
+    height: 359px;
     overflow: auto;
 }
 
@@ -198,8 +198,10 @@ nav > ul{
     }
 }
 
-/* query: 810, */
-/* 
-.container{
-    width: 100%;
-} */
+
+
+@media (max-height:668px){
+    .content{
+        height: 288px;
+    }
+}
