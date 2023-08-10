@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\DataController;
-// use App\Http\Controllers\SkillsController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ContactsController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,12 +21,10 @@ Route::resource('coontact',ContactsController::class,(array)'index');
 // Route::get('contacts',[ContactController::class,'showContacts']);
 // Route::get('contact',[ContactController::class,'contactMe']);
 
+//upcoming:
+// Route::get('skills',[ContactController::class,'showSkills']);
 
-// single controller as a route controller:
-// Route::controller(ContactController::class)->group(function (){
-//     Route::get('contacts', 'showContacts');
-//     Route::get('contact','contactMe');
-// });
+Route::get('/skills',[SkillController::class,'index'])->name('skills');
 
 
 
@@ -35,21 +33,17 @@ Route::get('/{page}', function($page) {
         return view('about');
     } elseif ($page == 'projects') {
         return view('projects');
-    } 
-    elseif ($page == 'contact') {
+    } elseif ($page == 'contact') {
         return view('contact');
     } 
-    // elseif ($page == 'contacts') {
-    //     return view('cotacts');
+    // elseif ($page == 'skills'){
+    //     return view('skills');
     // } 
-    elseif ($page == 'skills'){
-        return view('skills');
-    }elseif ($page == 'index'){
+    elseif ($page == 'index'){
         return view('coontact.index');
     }
 });
 
-// Route::get('/skills',[DataController::class,'index'])->name('skills');
 
 // Route::get('/skills', function () {
 //     return view('skills');
