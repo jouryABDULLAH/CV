@@ -14,9 +14,7 @@ class ContactsController extends Controller
     {
         $contact = contact::all(); // stores all data from the DB.
         return view('coontact.index',['contact'=> $contact]);
-        // return view('coontact.index')->with('contact',$contact);
 
-        // return view('coontact.index',[ 'coontact.index' => 'contact' ]);
     }
 
     /**
@@ -83,7 +81,7 @@ class ContactsController extends Controller
     {
         $contact = contact::findOrFail($id);
         $contact-> delete();
-        
+
         return redirect()->route('coontact.index');
     }
 }

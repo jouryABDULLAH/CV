@@ -18,7 +18,7 @@
         <br>
         <form action="{{route('coontact.update',['coontact'=>$contact->id])}}" method="POST">
             @csrf
-            @method('PUT');
+            @method('PUT')
 
             <div class="input-container">
                 <label class="form-label" for="name">Enter Your Name</label>

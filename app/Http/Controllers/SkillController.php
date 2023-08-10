@@ -21,7 +21,6 @@ class SkillController extends Controller
 
     public function index()
     {
-        // $skill = getData();
         return view('skills',['skill'=>self::getData()]);
     }
 }
