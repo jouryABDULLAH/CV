@@ -24,10 +24,12 @@
 
                 <ul class="contact-list">
                     @foreach($contact as $con)
-                        <li>
-                            <p>name: {{ $con['contact_name'] }}</p>
-                            <p>subject: {{ $con['contact_subject'] }}</p>
-                        </li>
+                        <a href="coontact/{{ $con['id'] }}" class="contact-item">
+                            <li>
+                                <p>name: {{ $con['contact_name'] }}</p>
+                                <p>subject: {{ $con['contact_subject'] }}</p>
+                            </li>
+                        </a>
                     @endforeach
                 </ul>
 

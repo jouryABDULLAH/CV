@@ -46,7 +46,8 @@ class ContactsController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $contact = contact::findOrFail($id);
+        return view('coontact.show',['contact'=>$contact]);
     }
 
     /**
@@ -54,7 +55,8 @@ class ContactsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $contact = contact::findOrFail($id);
+        return view('coontact.edit',['contact'=>$contact]);
     }
 
     /**
@@ -62,7 +64,16 @@ class ContactsController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $contact = contact::findOrFail($id);
+
+        $contact->contact_name = $request->input('contact_name');
+        $contact->contact_email = $request->input('contact_email');
+        $contact->contact_subject = $request->input('contact_subject');
+        $contact->contact_message = $request->input('contact_message');
+        $contact->save();
+
+        return redirect()->route('coontact.index');
+
     }
 
     /**
@@ -70,6 +81,9 @@ class ContactsController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $contact = contact::findOrFail($id);
+        $contact-> delete();
+        
+        return redirect()->route('coontact.index');
     }
 }

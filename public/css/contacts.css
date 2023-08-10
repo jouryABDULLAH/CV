@@ -12,3 +12,9 @@
     border-bottom: 1px white solid;
     padding-bottom: 0.3rem;
 }
+
+
+.contact-item:hover{
+    background-color: #ded4d6;
+    color: #d06c7d;
+}

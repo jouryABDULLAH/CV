@@ -21,19 +21,19 @@
             @csrf
             <div class="input-container">
                 <label class="form-label" for="name">Enter Your Name</label>
-                <input type="text" name="contact_name" id="name">
+                <input type="text" name="contact_name" id="name" required>
             </div>
             <div class="input-container">
                 <label class="form-label" for="email">Enter Your E-Mail</label>
-                <input type="email" name="contact_email" id="email">
+                <input type="email" name="contact_email" id="email" required>
             </div>
             <div class="input-container">
                 <label class="form-label" for="subject">Subject</label>
-                <input type="text" name="contact_subject" id="subject">
+                <input type="text" name="contact_subject" id="subject" required>
             </div>
             <div class="input-container">
                 <label class="form-label" for="message">Message</label>
-                <textarea name="contact_message" id="message" ></textarea>
+                <textarea name="contact_message" id="message" required></textarea>
             </div>
             <div class="button-container">
                 <button type="submit">Send</button>
