@@ -12,6 +12,7 @@
     
     @extends('/layouts.app')
 
+    @section('pageTitle', 'Contacts')
     @section('content')
 
         <div class="contacts">
@@ -34,7 +35,7 @@
                 </ul>
 
                 <br>
-                <p>you can join the list by contacting me <a href="/contact">HERE</a>!!</p>
+                <p>you can join the list by contacting me <a href="/contact" class="here">HERE!!</a></p>
 
 
             @else

@@ -11,6 +11,10 @@
 <body>
     @extends('layouts.app')
 
+    @section('pageTitle')
+        About
+    @endsection
+
     @section('content')
         <div class="about">
         

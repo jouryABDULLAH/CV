@@ -3,9 +3,13 @@
 .about{
     padding: 1.5rem;
     font-size: clamp(0.5rem, 0.9rem, 5rem);
-    
-    color: #ded4d6;
-    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    /* color: #ded4d6; */
+    color: #d06c7d;
+    margin: 0 4rem;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 2rem;
 }
 
 .about > h3{

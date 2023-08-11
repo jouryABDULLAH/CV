@@ -13,25 +13,26 @@
     @extends('layouts.app')
 
 
-        @section('content')
+    @section('pageTitle', 'Skills')
+    @section('content')
 
-            
-            @if (count($skill) > 0) 
+        
+        @if (count($skill) > 0) 
 
-                <div class="skills">
+            <div class="skills">
 
-                        @foreach( $skill as $s)
-                            <div class="skill">
-                                <img src= "{{ $s['link'] }}"  alt="">
-                                <span class="tooltip">{{ $s['name'] }}</span>
-                            </div>
-                        @endforeach
-                </div> 
-            @else
-                <p>No Skills Yet</p>
-            @endif
+                    @foreach( $skill as $s)
+                        <div class="skill">
+                            <img src= "{{ $s['link'] }}"  alt="">
+                            <span class="tooltip">{{ $s['name'] }}</span>
+                        </div>
+                    @endforeach
+            </div> 
+        @else
+            <p>No Skills Yet</p>
+        @endif
 
-        @endsection
+    @endsection
 
 
 </body>

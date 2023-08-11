@@ -11,6 +11,7 @@
 <body>
     @extends('layouts.app')
 
+    @section('pageTitle', 'Projects')
     @section('content')
         <div class="projects">
             <div class="project-container">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 form{
     display: flex;
     flex-direction: column;
@@ -5,7 +7,8 @@ form{
 }
 
 h2{
-    color: white;
+    color: #ded4d6;
+    font-family: 'Lobster', cursive;
 }
 
 hr{
@@ -59,11 +62,16 @@ textarea{
 
 
 @media (max-height:668px){
-    h2, hr, br{
-        visibility: hidden;
+    hr{
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    h2{
+        margin: 1rem 0;
     }
 
     form{
-        margin-top: -43px;
+        margin-top: -19px;
     }
 }

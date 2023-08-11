@@ -69,6 +69,9 @@
             </script>
 
             <div class="content">
+                <div class="title">
+                    @yield('pageTitle')
+                </div>
                 @section('content')
                     <h1>Hey! I'm <span class="name">Joori</span></h1>
                     <h4>Web Developer</h4>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .contact-list{
     overflow: auto;
@@ -18,3 +19,11 @@
     background-color: #ded4d6;
     color: #d06c7d;
 }
+
+.here{
+    font-family: 'Lobster', cursive;
+    color: #f6e6e9;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
